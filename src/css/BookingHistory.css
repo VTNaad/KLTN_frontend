@@ -1,0 +1,123 @@
+/* Thêm các style sau vào file CSS */
+
+.cancel-button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+  background-color: #ff5252;
+}
+
+.status-cancelled {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+.status-reserved {
+  color: #4dabf7;
+  font-weight: bold;
+}
+
+.status-refunded {
+  color: #20c997;
+  font-weight: bold;
+}
+
+.trash-button {
+  background-color: #f1f3f5;
+  color: #495057;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.trash-button:hover {
+  background-color: #e9ecef;
+}
+.booking-history {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-history h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.order-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.payment-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.payment-button:hover {
+  background-color: #45a049;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 15px;
+}
+
+.order-image img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.order-details h4 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.order-details p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.order-details p span {
+  font-weight: bold;
+}
+
+.order-item:not(:last-child) {
+  margin-bottom: 20px;
+}

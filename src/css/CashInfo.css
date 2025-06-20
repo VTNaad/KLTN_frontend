@@ -1,0 +1,205 @@
+.cash-info-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+}
+
+.cash-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cash-header h1 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cash-header p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+.cash-balance-card {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 6px solid;
+}
+
+.balance-info h3 {
+  color: #7f8c8d;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.balance-info h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.level-badge {
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.progress-container {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.progress-container h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #ecf0f1;
+  border-radius: 5px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+.benefits-section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-section h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #2c3e50;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.benefit-tier {
+  padding: 15px;
+  border-radius: 8px;
+  background: #f8f9fa;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.benefit-tier.active {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 2px;
+}
+
+.benefit-tier h4 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.how-to-use {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.how-to-use h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #2c3e50;
+}
+
+.usage-steps {
+  margin: 20px 0;
+}
+
+.usage-step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.step-number {
+  background: #3498db;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.use-cash-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto 0;
+  transition: background 0.3s ease;
+}
+
+.use-cash-btn:hover {
+  background: #2980b9;
+}
+
+.cash-loading,
+.cash-error {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+}
+
+.cash-error {
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cash-balance-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}

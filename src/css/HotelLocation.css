@@ -1,0 +1,95 @@
+.loading-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #666;
+}
+
+.address {
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.loading {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+}
+.map-modal-container {
+  display: flex;
+  height: 100%;
+  /* flex-direction: row-reverse; Đảo ngược vị trí để sidebar ở bên phải */
+}
+
+.map-sidebar {
+  width: 30%;
+  padding: 20px;
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #ddd;
+}
+
+.map-wrapper {
+  width: 70%;
+  height: 100%;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filter-tabs button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.filter-tabs button.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.places-list-container {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.places-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.place-item {
+  padding: 12px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.place-item h4 {
+  margin: 0 0 5px 0;
+  font-size: 15px;
+}
+
+.place-item p {
+  margin: 0;
+  color: #666;
+  font-size: 13px;
+}

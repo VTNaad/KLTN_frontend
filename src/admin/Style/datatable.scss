@@ -1,0 +1,105 @@
+.datatable {
+  display: inline;
+  height: 550px;
+  padding: 20px;
+
+  .cellWithImg {
+    display: flex;
+    align-items: center;
+
+    .cellImg {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+  }
+  .datatableTitle {
+    width: 100%;
+    font-size: 24px;
+    color: #616161;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .link {
+      color: green;
+      font-size: 16px;
+      font-weight: 400;
+      border: 1px solid green;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(0, 128, 0, 0.1);
+        color: green;
+      }
+    }
+  }
+
+  .datagrid {
+    color: #616161;
+    border: none;
+    --DataGrid-containerBackground: #whitesmoke !important;
+  }
+
+  .cellWithStatus {
+    padding: 5px;
+    border-radius: 5px;
+
+    &.active {
+      background-color: rgba(0, 128, 0, 0.05);
+      color: green;
+    }
+    &.pending {
+      background-color: rgba(255, 217, 0, 0.05);
+      color: goldenrod;
+    }
+    &.passive {
+      background-color: rgba(255, 0, 0, 0.05);
+      color: crimson;
+    }
+  }
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .addButton {
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: white;
+      background-color: #74cf6f;
+      font-size: 0.8rem;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    .viewButton {
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: white;
+      background-color: #6f85dc;
+      font-size: 0.8rem;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    .deleteButton {
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: white;
+      background-color: #e57373;
+      font-size: 0.8rem;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

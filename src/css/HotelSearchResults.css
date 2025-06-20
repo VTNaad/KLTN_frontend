@@ -1,0 +1,234 @@
+/* Container chính */
+.hotel-results-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.hotel-results {
+  display: flex;
+  gap: 20px;
+}
+
+.filters {
+  width: 25%;
+}
+
+.hotel-listing {
+  width: 75%;
+}
+
+/* Bộ lọc */
+.filter-container {
+  width: 250px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.filter-container h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.filter-category {
+  margin-top: 20px;
+}
+
+.filter-category h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.filter-price input {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.price-range {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Checkbox theo chiều dọc */
+.filter-category label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filter-category label:hover {
+  color: #ff4081;
+}
+
+.filter-category input[type="checkbox"] {
+  accent-color: #ff4081;
+  transform: scale(1.1);
+}
+
+/* Danh sách khách sạn */
+.hotel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0;
+}
+/* Ẩn mũi tên mặc định */
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+/* Hiển thị mũi tên khi hover */
+.hotel-item:hover .slick-prev,
+.hotel-item:hover .slick-next {
+  display: block !important;
+}
+.slick-prev {
+  left: 10px;
+  z-index: 10;
+}
+
+.slick-next {
+  right: 10px;
+  z-index: 10;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-size: 24px;
+  color: #fff;
+}
+
+.hotel-item {
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 20px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: 0.3s;
+  min-height: 280px;
+}
+
+.hotel-item:hover {
+  transform: scale(1.02);
+}
+
+.hotel-image-slider {
+  width: 300px;
+  height: 250px;
+}
+
+.hotel-image {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.hotel-info {
+  padding: 15px;
+  flex: 1;
+}
+
+.hotel-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.hotel-location {
+  font-size: 14px;
+  color: #666;
+}
+
+.hotel-rating {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  font-size: 14px;
+  color: #ff4081;
+}
+
+.rating-badge {
+  background: #ff4081;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.hotel-pricing {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+
+.discounted-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.discount {
+  background: #d32f2f;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.book-button {
+  background: #ff4081;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.book-button:hover {
+  background: #d81b60;
+}
+
+/* Cải tiến phần tiêu đề khách sạn */
+.hotel-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Cải tiến đánh giá sao */
+.star-rating {
+  color: #ffa726;
+  font-size: 16px;
+}
+
+/* Cải tiến khoảng cách vị trí */
+.location-info {
+  font-size: 14px;
+  color: #666;
+}
